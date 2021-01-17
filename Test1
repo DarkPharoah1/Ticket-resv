@@ -1,0 +1,43 @@
+import random
+import time
+print("ENTER WORK: ")
+time.sleep(1)
+print("Booking")
+time.sleep(1)
+print("Cancellation")
+Booking = "Booking"
+Cancellation = "Cancellation"
+work = input("Enter work: ")
+if work == Booking:
+# info about the destination
+    print("CHOOSE DESTINATION: ")
+    time.sleep(1)
+    print("Bangalore")
+    time.sleep(1)
+    print("Kolkata")
+    time.sleep(1)
+    print("Mumbai")
+
+    Bangalore = 'Bangalore'
+    Kolkata = 'Kolkata'
+    Mumbai = "Mumbai"
+    time.sleep(1)
+    des = input("ENTER DESTINATION: ")
+    if des == Bangalore:
+        print("Available flights: ")
+        print("OPTION#1 @ Rs.1000")
+        print("OPTION#2 @ Rs.1500")
+        OPTION1 = "OPTION1"
+        OPTION2 = 'OPTION2'
+        option = input("Flight chosen: ")
+#info about the user
+
+    n = int(input("ENTER NUMBER OF PERSON: "))
+    dict1 = {}
+    for i in range(n):
+        x = input("ENTER NAME: ")
+        y = random.randrange(0, 99999)
+        z = int(input("ENTER CONTACT NUMBER: "))
+        dict1[x] = y, z, des
+    print("CHECK VALUES: ")
+    print(dict1)
